@@ -1,0 +1,75 @@
+/*
+Theme Name: CMS II Project
+Theme Author: Orranis Krittayaruangkit
+Catherine Manrique
+Santiago Lopez
+Ana Carolina Maia
+
+*/
+
+
+/* Color Palette */
+:root {
+    --primary-color: #A7C957;
+    --secondary-color: #F5CAC3;
+    --text-color: #333;
+    --background-color: #fff;
+    --accent-color: #C8F1F9;
+    --dark-green: #225218;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: #C8F1F9;
+}
+
+  
+.footer {
+    background-color: var(--accent-color);
+}
+  
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+    text-decoration: none;
+}
+
+.hero-section {
+    padding-top: 50px;
+   
+}
+
+/* Style for text in the hero-banner */
+
+.lead {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for text in cards section*/
+.custom-heading {
+    font-size: 2rem;
+    color: #225218;
+    background-color: rgba(255, 255, 255, 0.4); /* Adjust the alpha value (0.7) for the desired opacity */
+    padding: 5px;
+    border-radius: 10px;
+}
