@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="content">
+<div class="container">
     <!-- WP Loop: require code that gets the page content -->
     <h1><?php bloginfo( 'name' ); ?></h1>
     <h2><?php bloginfo( 'description' ); ?></h2>
@@ -30,12 +30,5 @@
     <!-- endif of the WP loop -->
     <?php endif; ?>
 </div>
-
-<?php if ( !is_home() ) : ?>
-    <!-- Google Map Embed Code -->
-    <div class="google-map-container">
-        <iframe src="<?php echo esc_url( 'https://maps.app.goo.gl/uFaWDWqNrrH3uRAA6' ); ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-<?php endif; ?>
 
 <?php get_footer(); ?>

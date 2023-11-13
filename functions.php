@@ -1,6 +1,5 @@
 <?php
 
-
 // WP specific function to add CSS and scripts
 // https://developer.wordpress.org/themes/basics/including-css-javascript/ (Combining Enqueue Functions)
 
@@ -33,7 +32,8 @@ function register_my_menus() {
       ]
      );
    }
-   add_action( 'init', 'register_my_menus' );
+add_action( 'init', 'register_my_menus' );
+
 
 
 // Custom Footer Copyright Year

@@ -18,40 +18,90 @@ Ana Carolina Maia
     --dark-green: #225218;
 }
 
-
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: 'poppins';
 }
+  
+  
 
+/* Reset default Bootstrap styles for navbar */
 .navbar {
     background-color: #C8F1F9;
+    padding: 1rem 0; 
 }
 
-  
-.footer {
-    background-color: var(--accent-color);
-}
-  
-
-.menu {
+/* Equal spacing around each list link */
+.navbar-nav {
     display: flex;
-    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/* Remove default margin for list items */
+.navbar-nav .nav-item {
     margin: 0;
 }
 
-.menu li {
-    margin-right: 10px;
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+    background: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
 }
+
+/* Style for list links */
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; 
+    color: #000000; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Remove hover and focus styles for navbar-brand */
+.navbar-brand:hover,
+.navbar-brand:focus {
+    background: none;
+    border-radius: 0;
+    transition: none;
+    box-shadow: none;
+    
+}
+
+/* Style for the site namen */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Style for the site description */
+.navbar-text {
+    color: black;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* Style for list links on hover and focus */
+a:hover,
+a:focus {
+    background: #F5CAC3;
+    padding: 5px;
+    border-radius: 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+}
+
 
 .menu li a {
     text-decoration: none;
 }
 
-.menu li a:hover,
-.menu li a:focus {
-    text-decoration: none;
-}
 
 .hero-section {
     padding-top: 50px;
@@ -73,3 +123,58 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
+
+.container.px-4.py-5 h2 {
+
+    color: #A7C957;
+}
+
+.text-style {
+    color: #225218;
+    padding-top: 30px;
+}
+
+/* Styles for video section */
+
+.featurette-heading {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: #C8F1F9;
+
+}
+
+.video-container {
+    background-color: #A7C957; /* Set your desired background color */
+    background-size: cover;
+    padding: 20px; /* Set your desired padding */
+    border-radius: 10px;
+
+}
+
+/* Styles for Testimonials Section */
+.container-testimonials {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.container-testimonials h2{
+    color: #A7C957;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container-testimonials .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+ 
+.container-testimonials.col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+
+  }
+
+  /* Style the footer container */
+/* footer.container.py-5.my-5.border-top {
+    background: #A7C957;
+} */

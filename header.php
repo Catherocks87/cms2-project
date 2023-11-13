@@ -13,14 +13,22 @@
 
 <body>
     <header>
-        <!-- As a link -->
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><?php bloginfo('name'); ?></a>
-                <div><?php wp_nav_menu(['theme_location' => 'header-menu']); ?></div>
-                <div><?php bloginfo( 'description' ); ?></div>
+
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><?php bloginfo('name'); ?></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <?php wp_nav_menu(['theme_location' => 'header-menu', 'container' => 'ul', 'menu_class' => 'navbar-nav me-auto mb-2 mb-lg-0']); ?>
+                <div class="navbar-text">
+                    <?php bloginfo('description'); ?>
+                </div>
             </div>
+        </div>
         </nav>
+
     </header>
 
 </body>
